@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href="https://www.mikewhiterobot.com/contact.html" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets//favicon-16x16.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../assets/global.style.css" />
+    <link rel="stylesheet" href="../assets/contact.style.css" />
+    <script
+      src="https://kit.fontawesome.com/d6f550a69b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>CONTACT | MIKEWHITEROBOT</title>
+  </head>
+  <body>
+    <header>
+      <nav role="navigation" aria-label="Main" class="wrapper">
+        <ul>
+          <li class="nav-link"><a href="./products.html">Products</a></li>
+          <li class="nav-link"><a href="./about.html">About</a></li>
+          <li class="nav-link">
+            <a href="./assets/MWhiteResume2023.pdf">Resumé</a>
+          </li>
+          <li class="nav-link"><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="title-container wrapper">
+        <h1 aria-label="Mike White Robot"></h1>
+        <a class="logo-link" href="../index.html">
+          <div class="title-inner-wrapper" aria-hidden="true">
+            <span class="title title-1">MIKE</span>
+            <span class="title title-2">WHITE</span>
+            <span class="title title-3">ROBOT</span>
+            <span class="cursor">_</span>
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact wrapper">
+        <div class="form-wrapper">
+          <div class="contact-l fade-up">
+            <h2>Get in touch!</h2>
+            <p>Have a project in mind? I would love to hear about it!</p>
+            <p>
+              Message me here and I'll get back to you in the next 48 hours.
+            </p>
+            <div class="contact-l-inner">
+              <img class="mike-white" src="./assets/mike-white.jpg" />
+              <div class="contact-socials">
+                <a href="https://www.linkedin.com/in/mikewhite/" target="_blank"
+                  ><img src="../assets/linkedin.svg" alt="Linked In"
+                /></a>
+                <a href="mailto:mikewhiterobot@gmail.com" target="_blank"
+                  ><img src="../assets/email-12.svg" alt="Email"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-r fade-up">
+            <form
+              data-netlify="true"
+              method="POST"
+              class="contact-form"
+              name="contact-form"
+              onSubmit="submit"
+              data-netlify-honeypot="bot-field"
+              action="/success/"
+            >
+              <input class="is-hidden" name="bot-field" />
+              <div class="form-inputs">
+                <div class="form-el">
+                  <label for="name">Your name:</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-el">
+                  <label for="email">Your e-mail:</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+              </div>
+              <div class="form-el">
+                <label for="message">Tell me about your project:</label>
+                <textarea
+                  name="message"
+                  class="message"
+                  cols="30"
+                  rows="15"
+                  maxlength="none"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="primary-btn submit-btn">SEND</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--! mobile nav...  -->
+    <div
+      id="mobile-navigation"
+      role="navigation"
+      aria-label="Main"
+      class="nav-mobile"
+    >
+      <ul>
+        <li class="mobile-nav-link primary-btn">
+          <a href="./products.html">Products</a>
+        </li>
+        <li class="mobile-nav-link primary-btn">
+          <a href="./about.html">About</a>
+        </li>
+        <li class="mobile-nav-link primary-btn">
+          <a href="./assets/MWhiteResume2023.pdf">Resumé</a>
+        </li>
+        <li class="mobile-nav-link primary-btn">
+          <a href="./contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div
+      aria-label="navigation menu"
+      aria-controls="mobile-navigation"
+      aria-expanded="false"
+      class="nav-toggle wrapper"
+    >
+      <span class="bar-1"></span>
+      <span class="bar-2"></span>
+      <span class="bar-3"></span>
+    </div>
+    <!--! mobile footer...  -->
+    <div class="mobile-footer-container wrapper">
+      <div class="mobile-footer-inner contact-mobile-footer">
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/mikewhite/" target="_blank"
+            ><img src="../assets/linkedin.svg" alt="Linked In"
+          /></a>
+          <a href="mailto:mikewhiterobot@gmail.com" target="_blank"
+            ><img src="../assets/email-12.svg" alt="Email"
+          /></a>
+        </div>
+        <p>Mike White | 2023</p>
+      </div>
+    </div>
+    <!--! footer  -->
+    <footer class="wrapper">
+      <p>Mike White | 2023</p>
+    </footer>
+
+    <!--! scripts...  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/CustomEase.min.js"></script>
+    <script src="../assets/global.script.js"></script>
+    <script src="../assets/contact.script.js"></script>
+  </body>
+</html>
+
+<!-- "•" -->
